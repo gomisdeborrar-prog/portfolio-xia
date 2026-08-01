@@ -285,9 +285,8 @@ transform:scale(0.85);
     display:flex;
     justify-content:center;
     align-items:center;
-    gap:50px;
-    flex-wrap:wrap;
-    margin:40px 0;
+    gap:30px;
+    flex-wrap:nowrap;
 }
 
 .botonesindex a{
@@ -295,13 +294,7 @@ transform:scale(0.85);
     flex:0 0 auto;
 }
 
-.botonesindex img{
-    display:block;
-    max-height:200px;
-    width:auto;
-    height:auto;
-    transition:.3s;
-}
+
 
 .botonesindex img:hover{
     transform:translateY(-5px);
@@ -981,6 +974,72 @@ a img:hover{
     }
 
 }
+.galeria2{
+    width:100%;
+    justify-content:center;
+    align-items:center;
+    gap:30px;
+    padding:0 220px; /* Mucho aire a los lados */
+}
+
+.galeria2 a{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.galeria2 img{
+    width:100%;
+    max-width:1400px;
+    padding:35px 0;
+    height:auto;
+    display:block;
+    object-fit:contain;
+    transition:transform .3s ease;
+}
+
+.galeria2 img:hover{
+    transform:translateY(-6px);
+}
+
+/* 2K */
+@media (max-width:1920px){
+    .galeria2{
+        padding:0 180px;
+    }
+}
+
+/* Portátiles grandes */
+@media (max-width:1600px){
+    .galeria2{
+        padding:0 140px;
+    }
+}
+
+/* Portátiles */
+@media (max-width:1200px){
+    .galeria2{
+        padding:0 90px;
+    }
+}
+
+/* Tablets */
+@media (max-width:900px){
+    .galeria2{
+        padding:0 50px;
+    }
+}
+
+/* Móviles */
+@media (max-width:768px){
+    .galeria2{
+        padding:0 20px;
+    }
+
+    .galeria2 img{
+        max-width:100%;
+    }
+}
 
 .galeriailu{
     display: flex;
@@ -1046,9 +1105,25 @@ body.pagina-negra{
 }
 
 body.pagina-negra .dropdown-content{
-    background: rgba(0, 0, 0, 0.35); /* blanco semitransparente */
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background: #000;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+}
+@media (max-width:768px){
+
+    .dropdown-content{
+        background: white 
+    }
+
+}
+
+@media (max-width:768px){
+    body.pagina-negra .dropdown-content{
+    background: #000;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+
+    }
 }
 .video-container{
     width: 100%;
@@ -1060,4 +1135,32 @@ body.pagina-negra .dropdown-content{
     width: 100%;
     border-radius: 20px;
     display: block;
+}
+
+.boton-imagen{
+    position:relative;
+    flex:1;
+    width:clamp(250px, 42vw, 850px);
+    max-width:700px;   /* tamaño máximo */
+    min-width:250px;   /* tamaño mínimo */
+}
+
+.boton-imagen img{
+    width:100%;
+    height:auto;
+    display:block;
+}
+
+.boton-imagen .hover{
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+}
+
+.boton-imagen:hover .hover{
+    opacity: 1;
+}
+
+.boton-imagen:hover .normal{
+    opacity: 0;
 }

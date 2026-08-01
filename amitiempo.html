@@ -4,37 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-
+ <link rel="icon" type="image/png" href="img/Alexiaklee.png">
     <link rel="stylesheet" href="./css/porfolio.css">
 </head>
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-
-    const menus = document.querySelectorAll(".submenu-toggle");
-
-    menus.forEach(menu => {
-
-        menu.addEventListener("change", function() {
-
-            if (this.checked) {
-
-                menus.forEach(other => {
-
-                    if (other !== this) {
-                        other.checked = false;
-                    }
-
-                });
-
-            }
-
-        });
-
-    });
-
-});
-
-</script>
 
 <body id="top">
 
@@ -43,12 +15,10 @@ document.addEventListener("DOMContentLoaded", () => {
 <header>
     <div>
         <a href="index.html">
-            <img src="img/mi nombre 2.png" alt="logo" class="logo">
+            <img src="img/mi nombre 3.png" alt="Logo Alexia Klee" class="logo">
         </a>
     </div>
 </header>
-
-
 
 <nav>
 
@@ -59,40 +29,45 @@ document.addEventListener("DOMContentLoaded", () => {
 
         <div class="dropdown">
 
-    <!-- Desktop -->
-    <a href="index.html" class="dropbtn">PROJECTS ▼</a>
-
-    <!-- Mobile -->
-    <input type="checkbox" id="projects-toggle" class="submenu-toggle">
-
-    <label for="projects-toggle" class="dropbtn-mobile">
-        PROJECTS ▼
-    </label>
-            <div class="dropdown-content">
-                <a href="index.html" class="all-comics">ALL PROYECTS</a>
-                <a href="amitiempo.html"class="activo">AT MY TIME</a>
-                <a href="childrencorn.html">CHILDREN OF THE CORN</a>
-                <a href="miestrella.html">MY STAR</a>
-                <a href="banshee.html">BANSHEE</a>
-            </div>
-        </div>
-
-        <!-- COMIC -->
-        <div class="dropdown">
-
-            <a href="comic.html" class="dropbtn">COMIC ▼</a>
+            <a href="portfolio.html" class="dropbtn">PORTFOLIO ▼</a>
 
             <input type="checkbox" id="comic-toggle" class="submenu-toggle">
 
             <label for="comic-toggle" class="dropbtn-mobile">
-                COMIC ▼
+                PORTFOLIO ▼
             </label>
 
             <div class="dropdown-content">
-                <a href="comic.html" class="all-comics">ALL COMICS</a>
-                <a href="comicamitiempo.html">AT MY TIME</a>
-                <a href="laluna.html">HOY LA LUNA DUERME SOLA</a>
-                <a href="momentsofpeace.html">MOMENTS OF PEACE</a>
+                <a href="portfolio.html" class="all-comics">ALL PORTFOLIO</a>
+                <a href="character.html">CHARACTER DESIGN</a>
+                <a href="visdev.html">VISUAL DEVELOPMENT</a>
+                <a href="prop.html">PROP DESIGN</a>
+                <a href="comic.html">COMIC</a>
+                <a href="editorial.html">EDITORIAL</a>
+                <a href="demoreel.html">DEMO REEL</a>
+                
+               
+            </div>
+
+        </div>
+
+        <div class="dropdown">
+
+            <a href="proyectos.html" class="dropbtn">PROJECTS ▼</a>
+
+            <input type="checkbox" id="projects-toggle" class="submenu-toggle">
+
+            <label for="projects-toggle" class="dropbtn-mobile">
+                PROJECTS ▼
+            </label>
+
+            <div class="dropdown-content">
+                <a href="proyectos.html" class="all-comics">ALL PROJECTS</a>
+                <a href="amitiempo.html"class="activo">AT MY TIME</a>
+                <a href="fantasyband.html">FANTASY BAND</a>
+                <a href="childrencorn.html">CHILDREN OF THE CORN</a>
+                <a href="miestrella.html">MY STAR</a>
+                <a href="banshee.html">BANSHEE</a>
             </div>
 
         </div>
@@ -102,23 +77,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
         <div class="dropdown">
 
-    <!-- Desktop -->
-    <span class="dropbtn">CONTACT ME ▼</span>
+            <span class="dropbtn">CONTACT ME ▼</span>
 
-    <!-- Mobile -->
-  <input type="checkbox" id="contact-toggle" class="submenu-toggle">
+            <input type="checkbox" id="contact-toggle" class="submenu-toggle">
 
-    <label for="contact-toggle" class="dropbtn-mobile">
-        CONTACT ME ▼
-    </label>
+            <label for="contact-toggle" class="dropbtn-mobile">
+                CONTACT ME ▼
+            </label>
 
-    <div class="dropdown-content">
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=alexiakleeberg@gmail.com" target="_blank">EMAIL</a>
-        <a href="https://alexiaklee.carrd.co/" target="_blank">CARRD</a>
-        <a href="https://www.instagram.com/alexiaklee" target="_blank">INSTAGRAM</a>
-    </div>
+            <div class="dropdown-content">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=alexiakleeberg@gmail.com" target="_blank">GMAIL</a>
+                <a href="https://alexiaklee.carrd.co/" target="_blank">ALL MY SOCIALS</a>
+                <a href="https://www.instagram.com/alexiaklee" target="_blank">INSTAGRAM</a>
+            </div>
 
-</div>
+        </div>
 
     </div>
 
@@ -221,18 +194,47 @@ document.addEventListener("DOMContentLoaded", () => {
 
     <h2>ALEXIAKLEE</h2>
     <h3>Alexia Kleeberg</h3>
-    <p>Illustration · Concept art · VisDev · Comic</p>
+
+    <p>Illustration · Concept Art · VisDev · Comic</p>
 
     <div class="footer-links">
         <a href="sobremi.html">About Me</a>
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=alexiakleeberg@gmail.com"target="_blank">Contact Me
-</a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=alexiakleeberg@gmail.com" target="_blank">Contact Me</a>
         <a href="https://www.instagram.com/alexiaklee" target="_blank">Instagram</a>
     </div>
 
     <p>© 2026 Alexiaklee</p>
+    <p>alexiakleeberg@gmail.com</p>
 
 </footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    const menus = document.querySelectorAll(".submenu-toggle");
+
+    menus.forEach(menu => {
+
+        menu.addEventListener("change", function () {
+
+            if (this.checked) {
+
+                menus.forEach(other => {
+
+                    if (other !== this) {
+                        other.checked = false;
+                    }
+
+                });
+
+            }
+
+        });
+
+    });
+
+});
+</script>
 
 </body>
 </html>
