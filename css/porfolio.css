@@ -272,6 +272,7 @@ transform:scale(0.85);
     display:flex;
     justify-content:center;
     overflow:hidden;
+    padding: 10px 0px 30px;
 }
 
 .banner img{
@@ -781,7 +782,7 @@ a img:hover{
 
     inset:0;
 
-    background:rgba(0,0,0,0.35);
+    background:rgba(231, 108, 8, 0.35);
 
     opacity:0;
 
@@ -1019,21 +1020,21 @@ a img:hover{
 /* Portátiles */
 @media (max-width:1200px){
     .galeria2{
-        padding:0 90px;
+        padding:0 90px 30px;
     }
 }
 
 /* Tablets */
 @media (max-width:900px){
     .galeria2{
-        padding:0 50px;
+        padding:0 50px 20px;
     }
 }
 
 /* Móviles */
 @media (max-width:768px){
     .galeria2{
-        padding:0 20px;
+        padding:0 20px 10px;
     }
 
     .galeria2 img{
