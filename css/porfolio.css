@@ -1364,3 +1364,40 @@ body.pagina-negra .dropdown-content{
     background: #fff;
     color: #ff69b4;
     }
+
+    .menu-rosa .footer{
+    background: #D41290;
+    color: #ffffff;
+   
+}
+
+.menu-rosa .footer h2,
+.menu-rosa .footer h3,
+.menu-rosa .footer p{
+    color: #ffffff;
+}
+
+.menu-rosa .footer-links a{
+    color: #ffffff;
+}
+
+.menu-rosa .footer-links a:hover{
+    color: #ffffff;
+}
+
+.menu-rosa .copyright{
+    color: #ffffff;
+    opacity: 0.8;
+}
+
+.menu-rosa .anterior,
+.menu-rosa .siguiente,
+.menu-rosa .cerrar{
+    color: #D41290;
+}
+
+.menu-rosa .anterior:hover,
+.menu-rosa .siguiente:hover,
+.menu-rosa .cerrar:hover{
+    color: #ffffff;
+}
