@@ -1319,3 +1319,48 @@ body.pagina-negra .dropdown-content{
 
     object-fit: contain;
 }
+
+.menu-rosa nav a,
+.menu-rosa .dropbtn,
+.menu-rosa .dropbtn-mobile{
+    color: #D41290; /* Rosa */
+}
+
+.menu-rosa nav a:hover,
+.menu-rosa .dropbtn:hover,
+.menu-rosa .dropbtn-mobile:hover{
+    color: #ff9acb; /* Rosa más claro */
+}
+
+.menu-rosa .dropdown-content a{
+    color: #D41290;
+}
+
+.menu-rosa .dropdown-content a:hover{
+    color: #ff9acb;
+}
+
+.menu-rosa{
+    background-color: #000;
+    
+}
+.menu-rosa .dropdown-content{
+    background: #000;
+}
+.menu-rosa .dropdown-content a:hover{
+    color: #ff9acb;
+}
+
+.menu-rosa .menu-toggle{
+    color:#D41290;
+}
+
+.menu-rosa .boton-arriba{
+    background: #D41290;
+    color: #fff;
+}
+
+.menu-rosa .boton-arriba:hover{
+    background: #fff;
+    color: #ff69b4;
+    }
