@@ -42,11 +42,9 @@
                 <a href="character.html">CHARACTER DESIGN</a>
                 <a href="visdev.html">VISUAL DEVELOPMENT</a>
                 <a href="prop.html">PROP DESIGN</a>
-                <a href="comic.html"class="activo">COMIC</a>
+                <a href="comic.html" class="activo">COMIC</a>
                 <a href="editorial.html">EDITORIAL</a>
                 <a href="demoreel.html">DEMO REEL</a>
-                
-               
             </div>
 
         </div>
@@ -96,33 +94,29 @@
     </div>
 
 </nav>
-<div class="container">
-<div class="galeriaindex">
 
-    <a href="comicamitiempo.html" class="card">
-        <img src="img/A mi tiempo portada DEFINITIVA (1).jpg">
-        <span>At my time</span>
-    </a>
-    <a href="momentsofpeace.html" class="card">
-        <img src="img/Portada de moments of peace.jpg">
-        <span>Moments of peace</span>
-    </a>
-    <a href="laluna.html" class="card">
-        <img src="img/fanzine hoy la luna está sola 2.jpg">
-        <span>Hoy la luna esta sola</span>
-    </a>
-   
-   
+<main>
 
-</div>
+    <div class="botonesindex">
 
-</div>
+        <a href="comicamitiempo.html" class="boton-imagen">
+            <img src="img/A mi tiempo comic 1.png" class="normal" alt="A mi tiempo">
+            <img src="img/A mi tiempo comic 2.png" class="hover" alt="A mi tiempo">
+        </a>
 
+        <a href="momentsofpeace.html" class="boton-imagen">
+            <img src="img/Segundos 1.png" class="normal" alt="Moments of Peace">
+            <img src="img/Segundos 2.png" class="hover" alt="Moments of Peace">
+        </a>
 
-</div>
+        <a href="childrencorn.html" class="boton-imagen">
+            <img src="img/Luna 1.png" class="normal" alt="Children of the Corn">
+            <img src="img/Luna 2.png" class="hover" alt="Children of the Corn">
+        </a>
 
+    </div>
 
-
+</main>
 
 <footer class="footer">
 
@@ -141,34 +135,3 @@
     <p>alexiakleeberg@gmail.com</p>
 
 </footer>
-
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-
-    const menus = document.querySelectorAll(".submenu-toggle");
-
-    menus.forEach(menu => {
-
-        menu.addEventListener("change", function () {
-
-            if (this.checked) {
-
-                menus.forEach(other => {
-
-                    if (other !== this) {
-                        other.checked = false;
-                    }
-
-                });
-
-            }
-
-        });
-
-    });
-
-});
-</script>
-
-</body>
-</html>
