@@ -1406,6 +1406,86 @@ body.pagina-negra .dropdown-content{
 .menu-rosa .cerrar:hover{
     color: #ffffff;
 }
+.boton-imagen{
+    position: relative;
+    flex: 1 1 0;
+    width: 100%;
+    max-width: 320px;
+    min-width: 0;
+}
+
+.boton-imagen img{
+    width:100%;
+    height:auto;
+    display:block;
+}
+
+.boton-imagen .hover{
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+}
+
+.boton-imagen:hover .hover{
+    opacity: 1;
+}
+
+.boton-imagen:hover .normal{
+    opacity: 0;
+}
+
+.botonesindex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap; /* Nunca baja de línea */
+    gap: 20px;
+    width: 100%;
+}
+
+.botonesindex a{
+    flex: 1;
+    max-width: 600px;
+}
+
+.botonesindex img{
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform .3s ease;
+}
+
+.botonesindex img:hover{
+    transform: translateY(-5px);
+}
+
+/* Tablets */
+@media (max-width:768px){
+    .botonesindex{
+        gap: 15px;
+    }
+
+    .botonesindex a{
+        max-width: 220px;
+    }
+}
+
+/* Móviles */
+@media (max-width: 480px){
+    .botonesindex{
+        width: calc(100% - 40px);
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    .botonesindex a{
+        flex: 1;
+    }
+
+    .botonesindex img{
+       max-width: 100px;
+    }
+}
 
 
 
