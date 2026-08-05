@@ -268,18 +268,23 @@ transform:scale(0.85);
 }
 
 .banner{
-    width:100%;
-    display:flex;
-    justify-content:center;
-    overflow:hidden;
-    padding: 10px 0px 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    padding: 10px 0 30px;
+}
+
+.banner picture{
+    width: 100%;
+    display: block;
 }
 
 .banner img{
-    width:100%;
-    max-width:1920px;   /* Sustituye 1920 por el ancho REAL de tu imagen */
-    height:auto;
-    display:block;
+    width: 100%;
+    max-width: 1920px;
+    height: auto;
+    display: block;
 }
 
 .botonesindex{
@@ -1310,7 +1315,7 @@ body.pagina-negra .dropdown-content{
 
     width: 100%;
 
-    max-width: 400px; /* ancho máximo */
+    max-width: 500px; /* ancho máximo */
 
     height: auto; /* mantiene proporción */
 
@@ -1401,3 +1406,6 @@ body.pagina-negra .dropdown-content{
 .menu-rosa .cerrar:hover{
     color: #ffffff;
 }
+
+
+
