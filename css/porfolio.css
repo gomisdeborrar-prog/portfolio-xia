@@ -1182,35 +1182,6 @@ body.pagina-negra .dropdown-content{
     display: block;
 }
 
-.boton-imagen{
-    position: relative;
-    flex: 1;
-    width: clamp(250px, 42vw, 900px);
-    max-width: 900px;
-    min-width: 250px;
-    overflow: hidden;
-}
-
-.boton-imagen img{
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.boton-imagen .hover{
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-}
-
-.boton-imagen:hover .hover{
-    opacity: 1;
-}
-
-.boton-imagen:hover .normal{
-    opacity: 0;
-}
 .intro-text{
     text-align: center;
     margin: 10px auto;
@@ -1409,13 +1380,12 @@ body.pagina-negra .dropdown-content{
 
 
 
-
 .boton-imagen{
     position: relative;
-    flex: 1 1 0;
+    flex: 1;
     width: 100%;
-    max-width: 320px;
-    min-width: 0;
+    max-width: 600px;
+    overflow: hidden;
 }
 
 .boton-imagen img{
@@ -1438,18 +1408,58 @@ body.pagina-negra .dropdown-content{
     opacity: 0;
 }
 
-.botonesindex{
-    display: flex;
+.botonesindex1{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(250px, 500px));
     justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap; /* Nunca baja de línea */
     gap: 20px;
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.botonesindex1 a{
     width: 100%;
 }
 
+/* Centra el quinto botón */
+.botonesindex1 a:last-child{
+    grid-column: 1 / span 2;
+    justify-self: center;
+    max-width: 500px;
+}
+
+.botonesindex1 img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+@media (max-width:768px){
+
+    .botonesindex1{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        padding: 0 15px;
+    }
+
+    .botonesindex1 a:last-child{
+        grid-column: 1 / span 2;
+        width: 50%;
+    }
+}
+.botonesindex{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    gap: 20px;
+    width: 100%;
+    max-width: 1400px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
 .botonesindex a{
-    flex: 1;
-    max-width: 600px;
+    display: block;
+    width: 100%;
 }
 
 .botonesindex img{
@@ -1462,36 +1472,12 @@ body.pagina-negra .dropdown-content{
 .botonesindex img:hover{
     transform: translateY(-5px);
 }
-
-/* Tablets */
 @media (max-width:768px){
-    .botonesindex{
-        gap: 15px;
-    }
-
-    .botonesindex a{
-        max-width: 220px;
-    }
-}
-
-@media (max-width:480px){
 
     .botonesindex{
-        display: flex;
+        grid-template-columns: repeat(2, 1fr); /* Siguen siendo 2 por fila */
         gap: 10px;
-        width: 100%;
-        padding: 0 15px;
-    }
-
-    .botonesindex a{
-        flex: 1;
-        max-width: none;
-    }
-
-    .botonesindex img{
-        width: 100%;
-        max-width: 100%;
-        height: auto;
+        padding: 0 10px;
     }
 
 }
