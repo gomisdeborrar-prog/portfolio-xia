@@ -1448,22 +1448,29 @@ body.pagina-negra .dropdown-content{
     }
 }
 .botonesindex{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
     gap: 20px;
     width: 100%;
-    max-width: 1400px;
-    margin: 20px auto;
+    max-width: 1300px;
+    margin: 0 auto;
     padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .botonesindex a{
-    display: block;
-    width: 100%;
+    flex: 1 1 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
 }
 
 .botonesindex img{
     width: 100%;
+    max-width: 600px;
     height: auto;
     display: block;
     transition: transform .3s ease;
@@ -1472,12 +1479,48 @@ body.pagina-negra .dropdown-content{
 .botonesindex img:hover{
     transform: translateY(-5px);
 }
+
+
+/* ===========================
+   TABLETS
+=========================== */
+
 @media (max-width:768px){
 
     .botonesindex{
-        grid-template-columns: repeat(2, 1fr); /* Siguen siendo 2 por fila */
+        gap: 15px;
+        padding: 0 15px;
+    }
+
+    .botonesindex img{
+        max-width: 280px;
+    }
+
+}
+
+
+/* ===========================
+   MÓVILES
+=========================== */
+
+@media (max-width:480px){
+
+    .botonesindex{
+        width: 100%;
         gap: 10px;
         padding: 0 10px;
+    }
+
+    .botonesindex a{
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .botonesindex img{
+        width: 100%;
+        max-width: 140px;
+        height: auto;
     }
 
 }
